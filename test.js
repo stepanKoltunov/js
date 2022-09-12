@@ -805,3 +805,64 @@
 
 // console.log(makeTripleCopy(["24", "a", ""]))
 
+
+// function pigIt(str){
+//     let newStr = ""
+//     for(let i; i < str.length; i++){
+//         if(str[i].includes(" ")){
+//             newStr = str[i - 1].concat("y")
+//         }
+//         newStr = +str[i]
+//     }
+//     return newStr
+// }
+
+// console.log(pigIt('Pig latin is cool'))
+
+// function getStrFtomArr (arr){
+//     return arr.join(' ')
+// }
+// console.log(getStrFtomArr(['hello', 'world', 'this', 'is', 'great']))
+
+// function booleanToString(b){
+//     return `${b}`
+// }
+// console.log(booleanToString(true))
+
+// function descendingOrder(num){
+//     return +(num + '').split('').sort(function(a,b){ return b - a }).join('');
+//   }
+// console.log(descendingOrder(42145))
+
+// const response =  fetch('https://jsonplaceholder.typicode.com/photos', {
+//     method: 'POST',
+//     body: file
+//   })
+
+// document.querySelector('button').addEventListener("click", function(){
+//     let file = document.getElementById('file').files[0]
+//     if(file.type == 'image/png' || file.type == "image/jpeg") {
+//         response
+//         return console.log(file.name.slice(0, -4))
+//     }
+//     if(file.type == 'audio/mpeg') {
+//         response
+//         return console.log(file.size)
+//     } else {
+//         return console.error("type error")
+//     }
+// })
+
+function countMult(num) {
+    if(num > 0 && typeof num == "number"){
+        let result = 1
+        for(let i = 0; i < num; i++){
+            setTimeout(() => console.log(result *= i + 1),i * 1000)
+        }
+    } else {
+        return console.error('Num error')
+    }
+   
+}
+    
+console.log(countMult(11))
