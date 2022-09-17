@@ -853,16 +853,78 @@
 //     }
 // })
 
-function countMult(num) {
-    if(num > 0 && typeof num == "number"){
-        let result = 1
-        for(let i = 0; i < num; i++){
-            setTimeout(() => console.log(result *= i + 1),i * 1000)
-        }
-    } else {
-        return console.error('Num error')
-    }
+// function countMult(num) {
+//     if(num > 0 && typeof num == "number"){
+//         let result = 1
+//         for(let i = 0; i < num; i++){
+//             setTimeout(() => console.log(result *= i + 1),i * 1000)
+//         }
+//     } else {
+//         return console.error('Num error')
+//     }
    
-}
+// }
     
-console.log(countMult(11))
+// console.log(countMult(11))
+
+
+// let ValueAdder = new Function("b", "return sum(b)")
+
+// function sum(x){
+//     let allSum = 0
+//     allSum += x
+//     return allSum
+// }
+
+// console.log(ValueAdder(5))
+
+// let prom = new Promise(function(res) {
+//     res("1")
+// })
+// .then(res => console.log(res))
+// .then(res => console.log(res = "1, 2, 3"))
+
+
+//---------------------------------------------------------------------GAME---------------------------------------------------
+// let button = document.querySelectorAll(".btn").forEach(it => it.addEventListener("click",() => specialNumber(it, it.value)))
+// let indexNum = 1
+// let t = new Array(9);
+
+// function specialNumber(btn, val) {
+//     indexNum += 1
+//     choseBtn(btn, indexNum, val)
+// }
+
+
+// function choseBtn (btn, num, val){
+//     let whoIs = num%2
+//     if(whoIs == 0) {
+//         btn.classList.add("active-first")
+//         t[val] = "first"
+//         won()
+//     }
+//     if(whoIs == 1){
+//         btn.classList.add("active-second")
+//         t[val] = "second"
+//         won()
+//     }
+// }
+
+// function whoWon() {
+//     if (t[0]=='first' && t[1]=='first' && t[2]=='first' || t[0]=='second' && t[1]=='second' && t[2]=='second')  return true;
+//     if (t[3]=='first' && t[4]=='first' && t[5]=='first' || t[3]=='second' && t[4]=='second' && t[5]=='second')  return true;
+//     if (t[6]=='first' && t[7]=='first' && t[8]=='first' || t[6]=='second' && t[7]=='second' && t[8]=='second')  return true;
+//     if (t[0]=='first' && t[3]=='first' && t[6]=='first' || t[0]=='second' && t[3]=='second' && t[6]=='second')  return true;
+//     if (t[1]=='first' && t[4]=='first' && t[7]=='first' || t[1]=='second' && t[4]=='second' && t[7]=='second')  return true;
+//     if (t[2]=='first' && t[5]=='first' && t[8]=='first' || t[2]=='second' && t[5]=='second' && t[8]=='second')  return true;
+//     if (t[0]=='first' && t[4]=='first' && t[8]=='first' || t[0]=='second' && t[4]=='second' && t[8]=='second')  return true;
+//     if (t[2]=='first' && t[4]=='first' && t[6]=='first' || t[2]=='second' && t[4]=='second' && t[6]=='second')  return true;
+//     if(t[0] && t[1] && t[2] && t[3] && t[4] && t[5] && t[6] && t[7] && t[8]) return true;
+// }
+// function won() {
+//     if(whoWon()){
+//         setTimeout(() => location.reload(), 2000)
+//         return document.querySelector(".win").classList.remove("close")
+//     }
+// }
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
